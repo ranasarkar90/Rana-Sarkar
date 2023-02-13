@@ -4,10 +4,33 @@
     text-align: center;
 }
 .grid-container{
+    height: 500px;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     /* grid-template-rows: 100px 100px 100px 100px; */
+    /* grid-template: repeat(4,100px)/repeat(3,100px); */
+    /* grid-column-gap: 4px; */
+    /* grid-row-gap: 4px; */
+    grid-gap: 5px;
+    justify-content:center;
+    /* grid-template-areas: */
+    /* "h h h h h h h h h h h h" */
+    /* "s s s s s s s s s s s s" */
+    /* "th th th th th th th th th th th th "; */
 }
 .box1{
-    grid-column: 1/5;
+    grid-column: 2/5;
+    /* grid-area: h; */
+  
+}
+.box12{
+    grid-column: 2/5;
+}
+.box2{
+    grid-row: 1/7;
+    font-size: 20px;
+   
+}
+.box3{
+    grid-row: 2/6;
 }
